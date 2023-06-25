@@ -55,9 +55,23 @@
                 <a class="header__exit btn-unvsb" href="#">
                     Exit
                 </a>
+                <button class="header__burger burger">
+                    <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 2.5C0 1.11929 1.11929 0 2.5 0H32.5C33.8807 0 35 1.11929 35 2.5C35 3.88071 33.8807 5 32.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M10 13.5C10 12.1193 11.1193 11 12.5 11H32.5C33.8807 11 35 12.1193 35 13.5C35 14.8807 33.8807 16 32.5 16H12.5C11.1193 16 10 14.8807 10 13.5Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M0 24.5C0 23.1193 1.11929 22 2.5 22H32.5C33.8807 22 35 23.1193 35 24.5C35 25.8807 33.8807 27 32.5 27H2.5C1.11929 27 0 25.8807 0 24.5Z"
+                            fill="#4443F0" />
+                    </svg>
+
+                </button>
             </div>
         </div>
-    </header>
+    </header> 
 
     <div class="wrapper">
         <main class="main">
@@ -88,6 +102,9 @@
                         Приветствуем вас,
                         <span>
                             Ivan67
+                        </span>
+                        <span>
+
                         </span>
                     </h2>
                     <div class="cabinet__inner">
@@ -233,11 +250,29 @@
 
                                     </span>
                                 </h2>
-                                <form class="deposit__calculator-content calculator-content" action="#">
-                                    <div class="calculator-content-box">
+                                <div class="deposit__calculator-content calculator-content">
+                                    <div class="calculator-content__box calculator-content-box">
                                         <p class="calculator-content-box__text">
                                             Введите сумму
                                         </p>
+                                        <div class="calculator-content-box__price">
+                                            <p class="calculator-content-box__price-text">
+                                                10 USD
+                                            </p>
+                                            <p class="calculator-content-box__price-text">
+                                                5 000 USD
+                                            </p>
+                                        </div>
+                                        <form class="calculator-content-box__range calculator-content-box-range" oninput="output.value = range.valueAsNumber + ' USD'">
+                                            <div class="calculator-content-box-range__box calculator-content-box-range-box range">
+                                                <input class="calculator-content-box-range-box__input" name="range" type="range" min="10" max="5000">
+                                                <div class="calculator-content-box-range-box__range-output range-output">
+                                                    <output class="output" name="output" for="range">
+                                                        2500 USD
+                                                    </output>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="calculator-content__box calculator-content-box">
                                         <div class="calculator-content-box__row">
@@ -300,7 +335,7 @@
                                     <button class="calculator-content__btn btn" type="submit">
                                         Внести депозит
                                     </button>
-                                </form>
+                                </div>
                             </div>
                             <div class="deposit__img">
                                 <svg width="658" height="524" viewBox="0 0 658 524" fill="none"
@@ -2909,7 +2944,7 @@
                         <div class="partners-swiper__pagination swiper-pagination"></div>
                     </div>
                 </div>
-            </div>
+            </div> 
             <img class="main__bg-1" src="images/bg-1.svg" alt="img">
             <img class="main__bg-2" src="images/bg-2.svg" alt="img">
         </main>

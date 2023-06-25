@@ -43,6 +43,9 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__lang lang">
+                    
+                </div>
                 <div class="header__user-nav user-nav">
                     <a class="user-nav__link btn" href="#">
                         Login
@@ -3421,7 +3424,24 @@
                                 <p class="calculator-content-box__text">
                                     Введите сумму
                                 </p>
-                                <!-- range -->
+                                <div class="calculator-content-box__price">
+                                    <p class="calculator-content-box__price-text">
+                                        10 $
+                                    </p>
+                                    <p class="calculator-content-box__price-text">
+                                        5 000 $
+                                    </p>
+                                </div>
+                                <form class="calculator-content-box__range calculator-content-box-range" oninput="output.value = range.valueAsNumber + ' $'">
+                                    <div class="calculator-content-box-range__box calculator-content-box-range-box range">
+                                        <input class="calculator-content-box-range-box__input" name="range" type="range" min="10" max="5000">
+                                        <div class="calculator-content-box-range-box__range-output range-output">
+                                            <output class="output" name="output" for="range">
+                                                2500 $
+                                            </output>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div class="calculator-content__row calculator-content-row">
                                 <div class="calculator-content-row__item calculator-content-row-item">
@@ -3601,7 +3621,7 @@
                             <div class="license-images__box license-images-box">
                                 <div class="license-images-box__img">
                                     <img class="license-images-box__img-image" src="images/license-img-1.png" alt="img">
-                                    <a data-fancybox href="images/license-img-1.png">
+                                    <a data-fancybox href="images/license-img-1-big.png">
                                         <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.5"
@@ -3612,7 +3632,7 @@
                                 </div>
                                 <div class="license-images-box__img">
                                     <img class="license-images-box__img-image" src="images/license-img-2.png" alt="img">
-                                    <a data-fancybox href="images/license-img-1.png">
+                                    <a data-fancybox href="images/license-img-2-big.png">
                                         <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.5"
@@ -3757,16 +3777,16 @@
 
                         </span>
                         <span>
-                            
+
                         </span>
                         <span>
-                            
+
                         </span>
                         <span>
-                            
+
                         </span>
                         <span>
-                            
+
                         </span>
                     </div>
                     <div class="advantages__bottom advantages-bottom">
