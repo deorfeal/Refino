@@ -42,6 +42,19 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__lang lang">
+                    <div class="lang__text">
+                        Ru
+                    </div>
+                    <div class="lang__inner">
+                        <a class="lang__link" href="#">
+                            Ru
+                        </a>
+                        <a class="lang__link" href="#">
+                            Eng
+                        </a>
+                    </div>
+                </div>
                 <a class="header__user" href="#">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -2951,46 +2964,77 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a class="footer__logo logo" href="#">
-                        <img class="logo-img" src="images/logo.svg" alt="logo">
-                    </a>
-                    <nav class="footer__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
-                                    О нас
+                    <div class="footer__wrapper">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo-img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <nav class="footer__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Для партнеров
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapper">
+                        <div class="footer__box footer-box">
+                            <p class="footer-box__mail">
+                                Техподдержка:
+                                <a class="footer-box__mail-link" href="mailto:support@refino.net">
+                                    support@refino.net
                                 </a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
-                                    Для партнеров
+                            </p>
+                            <p class="footer-box__mail">
+                                Для рекламодателей:
+                                <a class="footer-box__mail-link" href="mailto:partners@refino.net">
+                                    partners@refino.net
                                 </a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
-                                    Команда
-                                </a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
-                                    FAQ
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a class="footer__mail" href="mailto:info@gmail.com">
-                        info@gmail.com
-                    </a>
-                    <a class="footer__link" href="#">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="socials">
-                                <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
-                                <path id="Vector"
-                                    d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                    </a>
+                            </p>
+                        </div>
+                        <div class="footer__box footer-box">
+                        <a class="footer-box__link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="socials">
+                                    <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                    <path id="Vector"
+                                        d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            - техподдержка
+                        </a>
+                        <a class="footer-box__link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="socials">
+                                    <rect id="Rectangle 1" width="40" height="40" rx="20" fill="#063AC0" />
+                                    <path id="Vector"
+                                        d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            - для рекламодателей
+                        </a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </footer>
