@@ -18,52 +18,61 @@
                 <a class="header__logo logo" href="#">
                     <img class="logo-img" src="images/logo.svg" alt="logo">
                 </a>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                Для партнеров
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                Команда
-                            </a>
-                        </li>
-                        <li class="menu__list-item menu__list-item--active">
-                            <a class="menu__list-link" href="#">
-                                FAQ
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__lang lang">
-                    <div class="lang__text">
-                        Ru
-                    </div>
-                    <div class="lang__inner">
-                        <a class="lang__link" href="#">
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <a class="menu__list-link" href="#">
+                                    Для партнеров
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Команда
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <a class="menu__list-link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__text">
                             Ru
+                        </div>
+                        <div class="lang__inner">
+                            <a class="lang__link" href="#">
+                                Ru
+                            </a>
+                            <a class="lang__link" href="#">
+                                Eng
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__user-nav user-nav">
+                        <a class="user-nav__link btn" href="#">
+                            Login
                         </a>
-                        <a class="lang__link" href="#">
-                            Eng
+                        <a class="user-nav__link btn-unvsb" href="#">
+                            Sign up
                         </a>
                     </div>
                 </div>
-                <div class="header__user-nav user-nav">
-                    <a class="user-nav__link btn" href="#">
-                        Login
-                    </a>
-                    <a class="user-nav__link btn-unvsb" href="#">
-                        Sign up
-                    </a>
-                </div>
-                <button class="header__burger burger">
+                <button class="header__person" type="button">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.629 11.3097C15.6008 10.3364 16.9608 8.3048 16.9608 5.961C16.9608 2.67408 14.2868 0 11 0C7.71317 0 5.03915 2.67408 5.03915 5.961C5.03915 8.3048 6.3992 10.3364 8.37097 11.3097C3.57102 12.4405 0 16.5953 0 21.5337C0 21.791 0.209027 22 0.466334 22H21.5337C21.791 22 22 21.791 22 21.5337C22 16.5953 18.429 12.4405 13.629 11.3097ZM5.97182 5.96045C5.97182 3.18761 8.22723 0.932143 11 0.932143C13.7728 0.932143 16.0282 3.18761 16.0282 5.96045C16.0282 8.73328 13.7728 10.9888 11 10.9888C8.22723 10.9888 5.97182 8.73328 5.97182 5.96045ZM0.944189 21.0673C1.2004 15.9918 5.61247 11.9374 11 11.9374C16.3875 11.9374 20.7996 15.9918 21.0558 21.0673H0.944189Z"
+                            fill="#063AC0" />
+                    </svg>
+                </button>
+                <button class="header__burger burger burger--menu" type="button">
                     <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0 2.5C0 1.11929 1.11929 0 2.5 0H32.5C33.8807 0 35 1.11929 35 2.5C35 3.88071 33.8807 5 32.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z"
@@ -75,7 +84,14 @@
                             d="M0 24.5C0 23.1193 1.11929 22 2.5 22H32.5C33.8807 22 35 23.1193 35 24.5C35 25.8807 33.8807 27 32.5 27H2.5C1.11929 27 0 25.8807 0 24.5Z"
                             fill="#4443F0" />
                     </svg>
-
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.767389 25.5161C-0.208921 24.5398 -0.208921 22.9569 0.767389 21.9806L21.9806 0.767389C22.9569 -0.208921 24.5398 -0.208921 25.5161 0.767389C26.4924 1.7437 26.4924 3.32661 25.5161 4.30292L4.30292 25.5161C3.32661 26.4924 1.7437 26.4924 0.767389 25.5161Z"
+                            fill="#4443F0" />
+                        <path
+                            d="M25.517 25.5161C26.4933 24.5398 26.4933 22.9569 25.517 21.9806L4.30381 0.767389C3.3275 -0.208921 1.74459 -0.208921 0.768275 0.767389C-0.208036 1.7437 -0.208036 3.32661 0.768275 4.30292L21.9815 25.5161C22.9578 26.4924 24.5407 26.4924 25.517 25.5161Z"
+                            fill="#4443F0" />
+                    </svg>
                 </button>
             </div>
         </div>
