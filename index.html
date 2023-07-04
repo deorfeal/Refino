@@ -963,18 +963,72 @@
                                     </p>
                                     <p
                                         class="calculator-content-box__price-text calculator-content-box__price-text--second">
-                                        5 000 $
+                                        500 000 $
                                     </p>
                                 </div>
-                                <form class="calculator-content-box__range calculator-content-box-range"
-                                    oninput="output.value = range.valueAsNumber + ' $'">
+                                <form class="calculator-content-box__range calculator-content-box-range calculator-content-box-range--active"
+                                    oninput="output.value = range.valueAsNumber + ' $'" id="1">
                                     <div
-                                        class="calculator-content-box-range__box calculator-content-box-range-box range">
-                                        <input class="calculator-content-box-range-box__input" name="range" type="range"
-                                            min="100" max="5000">
+                                        class="calculator-content-box-range__box calculator-content-box-range-box range range--first">
+                                        <input
+                                            class="calculator-content-box-range-box__input calculator-content-box-range-box__input--active"
+                                            name="range" type="range" min="100" max="500000">
                                         <div class="calculator-content-box-range-box__range-output range-output">
                                             <output class="output" name="output" for="range">
-                                                2500 $
+                                                250000 $
+                                            </output>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="calculator-content-box__range calculator-content-box-range"
+                                    oninput="output.value = range.valueAsNumber + ' $'" id="2">
+                                    <div
+                                        class="calculator-content-box-range__box calculator-content-box-range-box range range--second">
+                                        <input class="calculator-content-box-range-box__input" name="range" type="range"
+                                            min="10" max="500">
+                                        <div class="calculator-content-box-range-box__range-output range-output">
+                                            <output class="output" name="output" for="range">
+                                                250 $
+                                            </output>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="calculator-content-box__range calculator-content-box-range"
+                                    oninput="output.value = range.valueAsNumber + ' $'" id="3">
+                                    <div
+                                        class="calculator-content-box-range__box calculator-content-box-range-box range range--third">
+                                        <input class="calculator-content-box-range-box__input" name="range" type="range"
+                                            min="100" max="1500">
+
+                                        <div class="calculator-content-box-range-box__range-output range-output">
+                                            <output class="output" name="output" for="range">
+                                                750 $
+                                            </output>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="calculator-content-box__range calculator-content-box-range"
+                                    oninput="output.value = range.valueAsNumber + ' $'" id="4">
+                                    <div
+                                        class="calculator-content-box-range__box calculator-content-box-range-box range range--fourth">
+                                        <input class="calculator-content-box-range-box__input" name="range" type="range"
+                                            min="500" max="5000">
+                                        <div class="calculator-content-box-range-box__range-output range-output">
+                                            <output class="output" name="output" for="range">
+                                                2 500 $
+                                            </output>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="calculator-content-box__range calculator-content-box-range"
+                                    oninput="output.value = range.valueAsNumber + ' $'" id="5">
+                                    <div
+                                        class="calculator-content-box-range__box calculator-content-box-range-box range range--fifth">
+                                        <input class="calculator-content-box-range-box__input" name="range" type="range"
+                                            min="5000" max="500000">
+                                        <div class="calculator-content-box-range-box__range-output range-output">
+                                            <output class="output" name="output" for="range">
+                                                250000 $
                                             </output>
                                         </div>
                                     </div>
